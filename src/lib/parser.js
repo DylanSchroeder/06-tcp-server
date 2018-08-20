@@ -1,6 +1,7 @@
 'use strict';
 
 exports.parser = function(line, emitCallback) {
-  //TODO actually implement this
-  emitCallback('@all', line);
+  if (line.startsWith('@all')) {
+    return emitCallback('@all', line.substring(5));
+  }
 };

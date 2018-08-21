@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "node"
+
+script:
+  - |
+    (for dir in $(find $PWD -maxdepth 2 -name package.json -printf "%h\n"); do
+      cd $dir && npm install && npm test && npm run lint || exit 1
+    done)
+notifications:
+  email: false

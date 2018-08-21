@@ -43,5 +43,5 @@ events.on('start', (portFromStartEvent) => {
 exports.startServer = (port) => {
   server.listen(port, () => {
     events.emit('start', port);
-  })
+  });
 };

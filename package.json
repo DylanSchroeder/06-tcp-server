@@ -1,0 +1,31 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "* Work in a fork of this repository\r * Work in a branch on your fork\r * Create a PR to your master from your working branch.\r * Ensure that your repository/branch is connected to travis-ci.com\r * Ensure that your repository/branch is connected to a dyno at heroku.com\r * Submit on canvas:\r   * a question and observation\r   * how long you spent\r   * link to your pull request\r   * link to your build at travis-ci URL",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "test": "jest",
+    "watch": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "require-directory": "^2.1.1",
+    "uuid": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanSchroeder/06-tcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DylanSchroeder/06-tcp-server/issues"
+  },
+  "homepage": "https://github.com/DylanSchroeder/06-tcp-server#readme"
+}
